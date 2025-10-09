@@ -1,0 +1,22 @@
+@use "../../foundation/mixin";
+
+.p-hamburger {
+	width: 60px;
+	height: 60px;
+	position: relative;
+	@include mixin.mq( pc ) {
+		display: none;
+	}
+	.st1,.st2,.st3 {
+		transition: all 0.3s 0s ease;
+	}
+	&.is-open {
+		.st2 {
+			display: none;
+		}
+	}
+}
+
+body.is-open {
+	position: fixed;
+}
