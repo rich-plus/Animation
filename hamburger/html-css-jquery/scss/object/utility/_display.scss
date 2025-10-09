@@ -1,0 +1,54 @@
+
+@use "../../foundation/mixin";
+
+.u-disp {
+	&--sp {
+		display: block;
+		@include mixin.mq( tb ) { display: none; }
+		@include mixin.mq( pc ) { display    : none; }
+		@include mixin.mq( lg ) { display  : none; }
+		@include mixin.mq( xl ) { display  : none; }
+    @include mixin.mq( xxl ) { display  : none; }
+	}
+	&--tablet {
+		display: none;
+		@include mixin.mq( tb ) { display: block; }
+		@include mixin.mq( pc ) { display    : none; }
+		@include mixin.mq( lg ) { display  : none; }
+		@include mixin.mq( xl ) { display  : none; }
+    @include mixin.mq( xxl ) { display  : none; }
+	}
+	&--pc {
+		display: none;
+		@include mixin.mq( tb ) { display: none; }
+		@include mixin.mq( pc ) { display    : block; }
+		@include mixin.mq( lg ) { display  : block; }
+		@include mixin.mq( xl ) { display  : block; }
+    @include mixin.mq( xxl ) { display  : block; }
+	}
+	&--large {
+		display: none;
+		@include mixin.mq( tb ) { display: none; }
+		@include mixin.mq( pc ) { display    : none; }
+		@include mixin.mq( lg ) { display  : block; }
+		@include mixin.mq( xl ) { display  : block; }
+    @include mixin.mq( xxl ) { display  : block; }
+	}
+	&--xl {
+		display: none;
+		@include mixin.mq( tb ) { display: none; }
+		@include mixin.mq( pc ) { display    : none; }
+		@include mixin.mq( lg ) { display  : none; }
+		@include mixin.mq( xl ) { display  : block; }
+    @include mixin.mq( xxl ) { display  : block;}
+	}
+	&--xxl {
+		display: none;
+		@include mixin.mq( tb ) { display: none; }
+		@include mixin.mq( pc ) { display    : none; }
+		@include mixin.mq( lg ) { display  : none; }
+		@include mixin.mq( xl ) { display  : none; }
+    @include mixin.mq( xxl ) { display  : block;}
+	}
+  
+}
